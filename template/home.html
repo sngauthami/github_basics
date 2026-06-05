@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: white;
+            min-height: 100vh;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 60px;
+        }
+
+        nav h2{
+            font-size:28px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            font-weight:500;
+        }
+
+        .hero{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            height:85vh;
+            padding:20px;
+        }
+
+        .hero h1{
+            font-size:3.5rem;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:1.2rem;
+            max-width:700px;
+            margin-bottom:30px;
+            line-height:1.6;
+        }
+
+        .btn-container{
+            display:flex;
+            gap:15px;
+        }
+
+        .btn{
+            padding:12px 25px;
+            border:none;
+            border-radius:8px;
+            text-decoration:none;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .btn-primary{
+            background:white;
+            color:#4f46e5;
+        }
+
+        .btn-primary:hover{
+            background:#e5e7eb;
+        }
+
+        .btn-secondary{
+            border:2px solid white;
+            color:white;
+        }
+
+        .btn-secondary:hover{
+            background:rgba(255,255,255,0.15);
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>AttendEase</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Attendance Management System</h1>
+
+        <p>
+            Simplify attendance tracking for students, employees, and organizations.
+            Manage records, monitor attendance trends, and generate reports effortlessly
+            through a secure and user-friendly platform.
+        </p>
+
+        <div class="btn-container">
+            <a href="/register" class="btn btn-primary">Get Started</a>
+            <a href="/login" class="btn btn-secondary">Login</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Attendance Management System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
